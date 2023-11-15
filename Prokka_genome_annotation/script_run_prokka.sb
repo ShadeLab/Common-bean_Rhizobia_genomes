@@ -1,0 +1,23 @@
+#!/bin/bash --login
+########## SBATCH Lines for Resource Request ##########
+
+#SBATCH --time=4:00:00             # limit of wall clock time - how long the job will run (same as -t)
+#SBATCH --nodes=1                 # number of different nodes - could be an exact number or a range of nodes (same as -N)
+#SBATCH --ntasks=1                  # number of tasks - how many tasks (nodes) that you require (same as -n)
+#SBATCH --cpus-per-task=25           # number of CPUs (or cores) per task (same as -c)
+#SBATCH --mem-per-cpu=20G            # memory required per allocated CPU (or core) - amount of memory (in bytes)
+#SBATCH --job-name Rhizo.prokka      # you can give your job a name for easier identification (same as -J)
+#SBATCH --mail-user=mechanll@msu.edu
+#SBATCH --mail-type=BEGIN,END
+#SBATCH --output=Rhizo.prokka.out
+########## Command Lines for Job Running ##########
+
+export CONDA3PATH=~/miniconda3
+module load conda/3
+
+### Path to assembled fasta files
+cd /mnt/research/ShadeLab/WorkingSpace/MarcoMechan_WorkingSpace/Nanopore_SG_genomes/Flye_guppy15_Rhiz_SG
+chmod u+x script_annotate_prokka.py
+
+python script_annotate_prokka.py
+
