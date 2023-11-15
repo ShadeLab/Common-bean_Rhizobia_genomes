@@ -16,7 +16,7 @@
 echo "starting"
 date
 
-/mnt/home/mechanll/ont-guppy/bin/guppy_basecaller -i /mnt/research/ShadeLab/Sequence/raw_sequence/rhizobia_genomes/2023-07-22_rhizobia_NB1-10/20230722_1825_MN35349_FAU95562_9a353408/pod5 -r -s /mnt/gs21/scratch/groups/ShadeLab/Guppy15_Rhizo_SG --flowcell FLO-MIN114 --kit SQK-LSK114 --barcode_kits ""SQK-NBD114-24"" -x cuda:0 --gpu_runners_per_device 5 --min_qscore 15
+guppy_basecaller -i /mnt/research/ShadeLab/Sequence/raw_sequence/rhizobia_genomes/2023-07-22_rhizobia_NB1-10/20230722_1825_MN35349_FAU95562_9a353408/pod5 -r -s /mnt/gs21/scratch/groups/ShadeLab/Guppy15_Rhizo_SG --flowcell FLO-MIN114 --kit SQK-LSK114 --barcode_kits ""SQK-NBD114-24"" -x cuda:0 --gpu_runners_per_device 5 --min_qscore 15
 
 echo "finished"
 date
