@@ -15,6 +15,9 @@
 export CONDA3PATH=~/miniconda3
 module load conda/3
 
+echo "starting"
+date
+
 /mnt/home/mechanll/miniconda3/bin/flye --nano-hq /mnt/research/ShadeLab/WorkingSpace/MarcoMechan_WorkingSpace/Nanopore_SG_genomes/Porechoped_rhizo_SG/porech_guppy15_Rhizo_SG/SJ.4_porechoped_Rhizo.fastq --out-dir /mnt/research/ShadeLab/WorkingSpace/MarcoMechan_WorkingSpace/Nanopore_SG_genomes/Flye_guppy15_Rhiz_SG/SJ.4_flye_Rhizo
 
 /mnt/home/mechanll/miniconda3/bin/flye --nano-hq /mnt/research/ShadeLab/WorkingSpace/MarcoMechan_WorkingSpace/Nanopore_SG_genomes/Porechoped_rhizo_SG/porech_guppy15_Rhizo_SG/SY.5_porechoped_Rhizo.fastq --out-dir /mnt/research/ShadeLab/WorkingSpace/MarcoMechan_WorkingSpace/Nanopore_SG_genomes/Flye_guppy15_Rhiz_SG/SJ.5_flye_Rhizo
@@ -24,3 +27,8 @@ module load conda/3
 /mnt/home/mechanll/miniconda3/bin/flye --nano-hq /mnt/research/ShadeLab/WorkingSpace/MarcoMechan_WorkingSpace/Nanopore_SG_genomes/Porechoped_rhizo_SG/porech_guppy15_Rhizo_SG/TJ.7_porechoped_Rhizo.fastq --out-dir /mnt/research/ShadeLab/WorkingSpace/MarcoMechan_WorkingSpace/Nanopore_SG_genomes/Flye_guppy15_Rhiz_SG/TJ.7_flye_Rhizo
 
 /mnt/home/mechanll/miniconda3/bin/flye --nano-hq /mnt/research/ShadeLab/WorkingSpace/MarcoMechan_WorkingSpace/Nanopore_SG_genomes/Porechoped_rhizo_SG/porech_guppy15_Rhizo_SG/HY.7_porechoped_Rhizo.fastq --out-dir /mnt/research/ShadeLab/WorkingSpace/MarcoMechan_WorkingSpace/Nanopore_SG_genomes/Flye_guppy15_Rhiz_SG/HY.7_flye_Rhizo
+
+echo "finished"
+date
+
+exit;
