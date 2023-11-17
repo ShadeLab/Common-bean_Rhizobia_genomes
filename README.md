@@ -1,1 +1,1 @@
-# Switchgrass_Rhizobia_genomes
+# Common-bean_Rhizobia_genomes
